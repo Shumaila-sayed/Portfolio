@@ -36,22 +36,6 @@ h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
-/* 
-.epilogue-<uniquifier> {
-  font-family: "Epilogue", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
-
-.josefin-sans-<uniquifier> {
-  font-family: "Josefin Sans", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-} */
-
 :root {
   --focus-color: #EB5E28;
   --base-color: #0a0909;
@@ -254,7 +238,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .dialog {
-  display: none; /* Hidden by default */
+  display: none; 
   position: fixed;
   top: 0;
   left: 0;
@@ -266,7 +250,7 @@ input::placeholder, textarea::placeholder {
   transition: opacity 0.3s ease;
 }
 
-.dialog-content {
+.dialog > p, .dialog > button {
   background-color: var(--secondary-color-light);
   padding: 20px;
   border-radius: 10px;
@@ -277,13 +261,13 @@ input::placeholder, textarea::placeholder {
   animation: fadeIn 0.3s ease;
 }
 
-.dialog-content p {
+.dialog p {
   margin-bottom: 15px;
   font-size: 1.2em;
   color: #333;
 }
 
-.dialog-content button {
+.dialog button {
   background-color: var(--focus-color);
   color: var(--secondary-color-light);
   border: none;
