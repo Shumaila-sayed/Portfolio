@@ -70,6 +70,7 @@ body {
   font-family: "Josefin Sans", serif;
   scrollbar-color: var(--focus-color);
   scrollbar-width: 4em;
+  position: relative;
 }
  ::-webkit-scrollbar {
   width: 0.4em;
@@ -220,7 +221,11 @@ h3 {
   flex-direction: column;
   gap: 1.2em;
   align-items: center;
-  margin-bottom: 5em;
+  margin-bottom: 8em;
+}
+
+#contact > h2 {
+  margin-right: 2em;
 }
 
 #contactForm {
@@ -247,7 +252,6 @@ input::placeholder, textarea::placeholder {
 #contactForm > button {
   min-width: 20em;
 }
-
 
 .dialog {
   display: none; /* Hidden by default */
@@ -290,7 +294,6 @@ input::placeholder, textarea::placeholder {
   transition: background-color 0.3s;
 }
 
-/* Keyframes for dialog animation */
 @keyframes fadeIn {
   from {
       opacity: 0;
@@ -301,3 +304,126 @@ input::placeholder, textarea::placeholder {
       transform: scale(1);
   }
 }
+
+.dragon-ball {
+  max-width: 3.4em;
+  max-height: 3.4em;
+  animation:  5000ms infinite linear spin;
+}
+
+.one-star {  
+  transition: left 2s ease-in-out;
+  position: absolute;
+  top:  6em;
+  left: 45em;
+}
+
+.one-star:hover {
+  left: 50em;
+}
+
+.five-star {
+  transition: top 2s ease-in-out;
+  position: absolute;
+  top:  9em;
+  left: 18em;
+}
+
+.five-star:hover {
+  top: 2em;
+}
+
+.three-star {
+  transition: top 2s ease-in-out;
+  position: absolute;
+  top: 20em;
+  left: 30em;
+}
+
+.three-star:hover {
+  top: 15em;
+}
+
+.seven-star {
+  transition: right 2s ease-in-out;
+  position: absolute;
+  top: 20em;
+  right: 22em;
+}
+
+.seven-star:hover {
+  right: 30em;
+}
+
+.six-star {
+  transition: top 2s ease-in-out;
+  position: absolute;
+  top: 10em;
+  right: 15em;
+}
+
+.six-star:hover {
+  top: 5em;
+}
+
+.four-star {
+animation: 4s infinite linear spin-around;
+ position: absolute;
+ right: 15em;
+ bottom: 50em;
+}
+
+.two-star {
+  transition: bottom 2s ease-in-out;
+  position: absolute;
+  bottom: 20em;
+  right: 33em;
+}
+
+.two-star:hover {
+  bottom: 24em;
+}
+
+.footer-details > img {
+  max-width: 4em;
+  max-height: 1.6em;
+ margin-right: -0.5em;
+ cursor: pointer;
+}
+
+footer {
+  background-color: var(--secondary-color);
+  color: var(--base-color-light);
+  padding: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes spin-around {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+
+  30% {
+    transform: translate(-10em, 10em);
+  }
+
+  60% {
+    transform: translate(3em, 18em);
+  }
+
+  80% {
+    transform: translate(9em, 5em);
+  }
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+} 
+
