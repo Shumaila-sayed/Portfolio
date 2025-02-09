@@ -439,3 +439,10 @@ footer {
     }
 } 
 
+@media (max-width: 500px) {
+  .dragon-ball {
+    display: none;
+  }
+
+
+}
