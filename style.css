@@ -158,7 +158,7 @@ h2 {
 
 .project-container {
   display: grid;
-  grid-template-columns: repeat( auto-fit, minmax( 18em, 1fr));
+  grid-template-columns: repeat( auto-fit, minmax( 20em, 1fr));
   gap: 1.5em;
   margin-top: 1em;
   margin-bottom: 5.6em;
