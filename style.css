@@ -142,7 +142,7 @@ button {
 .introduction {
   min-height: 70vh;
   text-align: center;
-  margin-top: 8em;
+  margin-top: 10em;
 }
 
 h1 {
@@ -314,7 +314,7 @@ input::placeholder, textarea::placeholder {
 .one-star {  
   transition: left 2s ease-in-out;
   position: absolute;
-  top:  6em;
+  top:  10em;
   left: 45em;
 }
 
@@ -325,7 +325,7 @@ input::placeholder, textarea::placeholder {
 .five-star {
   transition: top 2s ease-in-out;
   position: absolute;
-  top:  9em;
+  top:  12em;
   left: 18em;
 }
 
@@ -358,8 +358,8 @@ input::placeholder, textarea::placeholder {
 .six-star {
   transition: top 2s ease-in-out;
   position: absolute;
-  top: 10em;
-  right: 15em;
+  top: 13em;
+  right: 16em;
 }
 
 .six-star:hover {
@@ -370,18 +370,18 @@ input::placeholder, textarea::placeholder {
 animation: 4s infinite linear spin-around;
  position: absolute;
  right: 15em;
- bottom: 50em;
+ bottom: 60em;
 }
 
 .two-star {
   transition: bottom 2s ease-in-out;
   position: absolute;
-  bottom: 20em;
+  bottom: 31em;
   right: 33em;
 }
 
 .two-star:hover {
-  bottom: 24em;
+  bottom: 34em;
 }
 
 .footer-details > img {
@@ -399,6 +399,18 @@ footer {
   justify-content: center;
   align-items: center;
 }
+
+.naruto {
+ opacity: 0; 
+  max-width: 10em;
+  max-height: 15em;
+  position: absolute;
+  right: 0;
+  bottom: 2.6em;
+  transform: translateX(0);
+  transition: transform 2s , opacity 0.1s ;   
+}
+
 
 @keyframes spin-around {
   0%, 100% {

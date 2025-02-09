@@ -135,9 +135,9 @@
             </div>
             </section>
         </main>
-
+        <img src="./assets/desktop-wallpaper-anime-naruto-run-running-anime-removebg-preview.png" alt="" class="naruto">
         <footer class="footer-details">
-            <img src="./assets/339-3398895_picture-konoha-logo-removebg-preview.png" alt=""> 
+            <img src="./assets/339-3398895_picture-konoha-logo-removebg-preview.png" alt="" class="konoha"> 
             <p>Shumaila Sayed</p>
         </footer>
 
@@ -148,6 +148,7 @@
         <img src="./assets/Dragon-balls/Dragon-balls (4).svg" alt="" class="dragon-ball five-star">
         <img src="./assets/Dragon-balls/Dragon-balls (5).svg" alt="" class="dragon-ball six-star">
         <img src="./assets/Dragon-balls/Dragon-balls (6).svg" alt="" class="dragon-ball seven-star">
+        
    <script>
         document.getElementById("contactForm").addEventListener("submit", function (event) {
             event.preventDefault();
@@ -162,6 +163,21 @@
         function closeDialog() {
             document.getElementById("dialog").style.display = "none";
         }
+
+        const konoha = document.querySelector('.konoha');
+        const naruto = document.querySelector('.naruto');
+
+        konoha.addEventListener("click", () => {
+        naruto.style.opacity = "1";
+        naruto.style.transform = "translateX(0)";
+
+        naruto.style.transform = "translateX(-90em)";
+
+        setTimeout(() => {
+            naruto.style.opacity = "0";
+            naruto.style.transform = "translateX(0)"; 
+        }, 2200); 
+        })
     </script>
 	</body>
 </html>
