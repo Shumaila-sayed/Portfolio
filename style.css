@@ -240,7 +240,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .dialog-box::backdrop {
-  opacity: 0.75;
+  opacity: 0.5;
   background-color: var(--base-color-light);
 }
 
