@@ -161,11 +161,8 @@
        const close = document.querySelector('.close-button')
        document.getElementById("contactForm").addEventListener("submit", function (event) {
            event.preventDefault();
-
+            dialog.showModal();
             this.submit();
-            setTimeout(() => {
-                 dialog.showModal();
-            }, 3000);
         });
 
         const konoha = document.querySelector('.konoha');
