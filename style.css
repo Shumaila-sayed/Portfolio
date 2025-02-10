@@ -508,5 +508,23 @@ footer {
 }
 
 @media (max-width: 1100px) {
+  .six-star {
+    right: 8em;
+  }
 
+  .five-star {
+    top: 8em;
+  }
+
+  .three-star {
+    left: 12em;
+  }
+
+  .introduction {
+    min-height: 25vh;
+  }
+
+  .two-star {
+    right: 23em;
+  }
 }
