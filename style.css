@@ -253,9 +253,6 @@ input::placeholder, textarea::placeholder {
   width: 280px;
   animation: fadeIn 0.3s ease;
   margin: 8em auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .dialog-box > p {
@@ -273,6 +270,7 @@ input::placeholder, textarea::placeholder {
   cursor: pointer;
   max-width: 90%;
   font-size: 1em;
+  margin: 0 auto;
   transition: background-color 0.3s;
 }
 
