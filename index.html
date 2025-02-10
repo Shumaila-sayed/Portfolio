@@ -134,10 +134,10 @@
                   <button type="submit">Send <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/></svg></button>
                 </form>
 
-            <div id="dialog" class="dialog">
+            <dialog class="dialog-box">
                 <p>Thank you! Your message has been sent.</p>
-                <button onclick="closeDialog()">Close</button>
-            </div>
+                <button class="close-button">Close</button>
+            </dialog>
             </section>
         </main>
         <img src="./assets/desktop-wallpaper-anime-naruto-run-running-anime-removebg-preview.png" alt="" class="naruto">
@@ -155,19 +155,21 @@
         <img src="./assets/Dragon-balls/Dragon-balls (6).svg" alt="" class="dragon-ball seven-star">
         
    <script>
-        document.getElementById("contactForm").addEventListener("submit", function (event) {
-            event.preventDefault();
+       const dialog = document.querySelector('.dialog-box');
+       const close = document.querySelector('.close-button')
+       document.getElementById("contactForm").addEventListener("submit", function (event) {
+           event.preventDefault();
 
-            document.getElementById("dialog").style.display = "block";
+           dialog.showModal();
 
             setTimeout(() => {
                 this.submit();
             }, 2000);
         });
 
-        function closeDialog() {
-            document.getElementById("dialog").style.display = "none";
-        }
+        close.addEventListener('click', () => {
+            dialog.close();
+        })
 
         const konoha = document.querySelector('.konoha');
         const naruto = document.querySelector('.naruto');

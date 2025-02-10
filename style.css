@@ -239,20 +239,12 @@ input::placeholder, textarea::placeholder {
   min-width: 20em;
 }
 
-.dialog {
-  display: none; 
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--base-color);
-  align-items: center;
-  justify-content: center;
-  transition: opacity 0.3s ease;
+.dialog-box::backdrop {
+  opacity: 0.75;
+  background-color: var(--base-color-light);
 }
 
-.dialog > p, .dialog > button {
+.dialog-box {
   background-color: var(--secondary-color-light);
   padding: 20px;
   border-radius: 10px;
@@ -263,19 +255,20 @@ input::placeholder, textarea::placeholder {
   animation: fadeIn 0.3s ease;
 }
 
-.dialog p {
+.dialog-box > p {
   margin-bottom: 15px;
   font-size: 1.2em;
   color: #333;
 }
 
-.dialog button {
+.dialog-box button {
   background-color: var(--focus-color);
   color: var(--secondary-color-light);
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
+  max-width: 90%;
   font-size: 1em;
   transition: background-color 0.3s;
 }
@@ -493,6 +486,10 @@ footer {
    font-size: 2em;
   }
 
+  h2 {
+    font-size: 1em;
+  }
+
   .introduction {
     margin-top: 6em;
     min-height: 40vh;
@@ -522,6 +519,7 @@ footer {
 
   .introduction {
     min-height: 25vh;
+
   }
 
   .two-star {
