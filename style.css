@@ -253,6 +253,7 @@ input::placeholder, textarea::placeholder {
   width: 280px;
   box-shadow: 0 4px 6px var(--base-color-light);
   animation: fadeIn 0.3s ease;
+  margin: 12em auto;
 }
 
 .dialog-box > p {

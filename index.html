@@ -122,6 +122,7 @@
                 <h2>Get in Touch</h2>
 
                <form id="contactForm" action="https://formsubmit.co/shumaila.dev@gmail.com" method="POST">
+                <input type="hidden" name="_captcha" value="false">
                   <div>
                   <input type="text" id="name" name="name" required placeholder="Name"></div>
 
@@ -160,10 +161,9 @@
        document.getElementById("contactForm").addEventListener("submit", function (event) {
            event.preventDefault();
 
-           dialog.showModal();
-
+            this.submit();
             setTimeout(() => {
-                this.submit();
+                 dialog.showModal();
             }, 2000);
         });
 
