@@ -246,7 +246,7 @@ input::placeholder, textarea::placeholder {
 
 .dialog-box {
   background-color: var(--secondary-color-light);
-  padding: 20px;
+  padding: 1.2em 2em ;
   border-radius: 10px;
   text-align: center;
   max-width: 90%;
@@ -256,22 +256,8 @@ input::placeholder, textarea::placeholder {
 }
 
 .dialog-box > p {
-  margin-bottom: 15px;
   font-size: 1.2em;
   color: #333;
-}
-
-.dialog-box > button {
-  background-color: var(--focus-color);
-  color: var(--secondary-color-light);
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  max-width: 90%;
-  font-size: 1em;
-  margin: 0 auto;
-  transition: background-color 0.3s;
 }
 
 @keyframes fadeIn {
