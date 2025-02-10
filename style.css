@@ -362,7 +362,7 @@ animation: 4s infinite linear spin-around;
   transition: bottom 2s ease-in-out;
   position: absolute;
   bottom: 31em;
-  right: 33em;
+  right: 36em;
 }
 
 .two-star:hover {
@@ -428,6 +428,4 @@ footer {
   .dragon-ball {
     display: none;
   }
-
-
 }
